@@ -1392,8 +1392,8 @@ read_repo_config_option(char *name, size_t namelen, char *value, size_t valuelen
 	else if (!strcmp(name, "core.editor"))
 		string_ncopy(opt_editor, value, valuelen);
 
-	else if (!strcmp(name, "core.worktree"))
-		set_work_tree(value);
+	//else if (!strcmp(name, "core.worktree"))
+//		set_work_tree(value);
 
 	else if (!strcmp(name, "core.abbrev"))
 		parse_int(&opt_id_width, value, 0, SIZEOF_REV - 1);
